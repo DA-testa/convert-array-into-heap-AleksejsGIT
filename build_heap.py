@@ -15,7 +15,7 @@ def build_heap(data):
             if second < tests and data[second] < data[min_index]:
                 min_index = second
             if i != min_index:
-                swaps.append(i, min_index)
+                swaps.append((i, min_index))
                 data[i], data[min_index] = data[min_index], data[i]
                 i = min_index
                 continue
