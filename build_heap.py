@@ -9,10 +9,10 @@ def build_heap(data):
         while(True):
             min_index = i
             first = 2*i+1
-            if first < data and data[first] < data[min_index]:
+            if first < tests and data[first] < data[min_index]:
                 min_index = first
             second = 2*i+2
-            if second < data and data[second] < data[min_index]:
+            if second < tests and data[second] < data[min_index]:
                 min_index = second
             if i != min_index:
                 swaps.append(i, min_index)
